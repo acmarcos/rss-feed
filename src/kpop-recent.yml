@@ -1,0 +1,12 @@
+name: "Album of the Year - K-Pop Recentes"
+description: "Monitora os últimos lançamentos de K-Pop"
+source:
+  url: "https://www.albumoftheyear.org/genre/188-k-pop/recent/"
+  engine: playwright
+selectors:
+  item: ".albumItem"
+  title: ".albumTitle"
+  link: "a.albumTitle@href"
+  date: ".date"
+output:
+  filename: "kpop-recent.xml"
